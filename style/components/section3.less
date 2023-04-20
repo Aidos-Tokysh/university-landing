@@ -1,0 +1,144 @@
+//main: ../style.less
+.center4{
+    display: flex;
+    border: 1px solid none;
+    padding-top: 50px;
+    margin-left: 10%;
+    width: 1200px;
+    height: 100px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+}
+.center5{
+    margin-top: 50px;
+    height: 700px;
+}
+.pic1{
+    position: relative;
+    content: '';
+    display: inline-flex;
+    width: 400px;
+    height: 570px;
+    border: 1px solid none;
+    border-radius: 5%;
+    margin: 100px 50px 150px 100px;
+    transition: .8s;
+    
+    & img{
+        display: inline-flex;
+        width: 400px;
+        height: 570px;
+        border: 1px solid none;
+        border-radius: 5%;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        display: inline-flex;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: 2s;
+    }
+    &:hover::after{
+        position: absolute;
+        content: 'London';
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        color: @pics_color;
+        background-color: @pics_hover_bg;
+        transition:.8s;
+        height: 100%;
+        width: 100%;
+        transform: scaleY(1);
+        border-radius: 5%;
+        opacity: 1;
+    }
+}
+.pic2{
+    position: relative;
+    content: '';
+    display: inline-flex;
+    justify-content: space-around;
+    width: 400px;
+    height: 570px;
+    border: 1px solid none;
+    border-radius: 5%;
+    margin: 100px 50px 150px 0;
+    transition: .8s;
+    & img{
+        display: inline-flex;
+        width: 400px;
+        height: 570px;
+        border: 1px solid none;
+        border-radius: 5%;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        display: inline-flex;
+        transform: scaleY(0);
+        transform-origin:bottom;
+        transition: .8s;
+    }
+    &:hover::after{
+        position: absolute;
+        content: 'Newyork';
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        color: @pics_color;
+        background-color: @pics_hover_bg;
+        transition:.8s;
+        height: 100%;
+        width: 100%;
+        transform: scaleY(1);
+        border-radius: 5%;
+        opacity: 1;
+    }
+}
+.pic3{
+    position: relative;
+    content: '';
+    display: inline-flex;
+    width: 400px;
+    height: 570px;
+    border: 1px solid none;
+    border-radius: 5%;
+    margin: 100px 30px 150px 0;
+    transition: .8s;
+    & img{
+        display: inline-flex;
+        width: 400px;
+        height: 570px;
+        border: 1px solid none;
+        border-radius: 5%;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        display: inline-flex;
+        transform: scaleY(0);
+        transform-origin:bottom;
+        transition: .8s;
+    }
+    &:hover::after{
+        position: absolute;
+        content: 'Washington';
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        color: @pics_color;
+        background-color: @pics_hover_bg;
+        transition:.8s;
+        height: 100%;
+        width: 100%;
+        transform: scaleY(1);
+        border-radius: 5%;
+        opacity: 1;
+    }
+}
